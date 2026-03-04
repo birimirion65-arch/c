@@ -47,11 +47,24 @@ h1{font-size:28px;margin-bottom:10px;}
   margin:20px 0;
 }
 .cta{
-  margin-top:20px;
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:18px 34px;
+  border-radius:16px;
+  background:linear-gradient(180deg,var(--green),var(--green2));
+  color:#06210f;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 25px 60px rgba(34,197,94,.35);
+  min-width:260px;
+  text-align:center;
 }
+.cta-main{font-size:18px;}
+.cta-sub{font-size:13px;margin-top:4px;opacity:.85;}
 </style>
 </head>
-
 <body>
 
 <div class="card">
@@ -63,12 +76,10 @@ h1{font-size:28px;margin-bottom:10px;}
 
   <p>下のボタンからお受け取りください。</p>
 
-  <div class="cta">
-  <a href="https://lin.ee/81Ancoa">
-  <img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png"
-  alt="LINE友だち追加" height="36" border="0">
+  <a class="cta" href="https://lin.ee/81Ancoa" target="_blank" rel="noopener">
+    <span class="cta-main">ここから受け取り</span>
+    <span class="cta-sub">（公式LINEへ移動します。）</span>
   </a>
-  </div>
 
 </div>
 
